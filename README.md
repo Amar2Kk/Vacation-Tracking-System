@@ -18,76 +18,38 @@ By automating vacation tracking, the system reduces administrative overhead and 
 
 The Vacation Tracking System (VTS) aims to empower employees by giving them direct control over managing their vacation time, sick leave, and personal time off—without requiring deep knowledge of complex company policies.
 
+## System Actors
+
+| Actor        | Role & Responsibilities                                              |
+| ------------ | -------------------------------------------------------------------- |
+| Employee     | Requests and manages vacation time                                   |
+| Manager      | Approves team leave requests and can award comp time (within limits) |
+| HR Clerk     | Maintains employee records and can override system rules             |
+| System Admin | Manages technical infrastructure and log files                       |
+
 ## Requirements
 
 ### Functional Requirements
 
-#### Leave Request Management
-
--   Employees can submit, edit, and cancel vacation, sick leave, and personal time-off requests
--   Employees can view their remaining leave balance
--   Employees can check past (previous calendar year) and future (up to 1.5 years ahead) leave requests
-
-#### Approval Workflow
-
--   Managers can approve/reject leave requests (optional for some employees)
--   Automated rules-based validation to enforce company policies (e.g., max leave days, blackout periods)
--   HR can override system restrictions when necessary (with audit logging)
-
-#### Notifications
-
--   Email alerts sent to managers for pending approvals
--   Employees receive notifications on request status (approved/rejected)
-
-#### Integration & Data Management
-
--   Interfaces with HR legacy systems to sync employee data
--   Provides a Web service API for other internal systems to query employee leave summaries
--   Uses the company's intranet single-sign-on (SSO) for authentication
-
-#### Reporting & Logging
-
--   Maintains audit logs for all leave transactions (requests, approvals, overrides)
--   Managers can view team leave schedules
--   HR can generate reports on leave trends
-
-#### Admin & Override Functions
-
--   HR can manually adjust leave balances if needed
--   Managers can award additional personal leave (within system limits)
+| Category         | Features                                                                                               |
+| ---------------- | ------------------------------------------------------------------------------------------------------ |
+| Leave Management | • Submit, edit, cancel requests<br>• View leave balance<br>• Check past/future leave (1.5 years ahead) |
+| Workflow         | • Manager approval process<br>• Automated policy validation<br>• HR override capabilities              |
+| Communication    | • Email notifications for approvals<br>• Status updates for employees                                  |
+| Integration      | • HR system sync<br>• Web service API<br>• SSO authentication                                          |
+| Reporting        | • Audit logging<br>• Team schedule views<br>• Leave trend analysis                                     |
+| Administration   | • Manual balance adjustments<br>• Comp time awards                                                     |
 
 ### Non-Functional Requirements
 
-#### Usability
-
--   Intuitive UI – Easy for employees and managers to use without training
--   WYSIWYG or simple formatting for leave notes (if text input is required)
-
-#### Performance & Scalability
-
--   Handles concurrent requests during peak leave seasons
--   Fast response times for approvals and balance checks
-
-#### Security & Compliance
-
--   Role-based access control (employees, managers, HR, admins)
--   Audit trails for all changes (for compliance & dispute resolution)
--   Data encrypted in transit and at rest
-
-#### Reliability & Availability
-
--   High uptime (e.g., 99.9%) since leave requests are time-sensitive
--   Automatic backups to prevent data loss
-
-#### Integration & Compatibility
-
--   Works with existing intranet portal and HR systems
--   Supports standard protocols (e.g., REST API for external queries)
-
-#### Maintainability
-
--   Modular design for easy updates (e.g., changing leave policies)
--   Logging for troubleshooting
+| Category    | Requirements                                               |
+| ----------- | ---------------------------------------------------------- |
+| Usability   | • Intuitive interface<br>• Minimal training needed         |
+| Performance | • Handle peak season load<br>• Quick response times        |
+| Security    | • Role-based access<br>• Audit trails<br>• Data encryption |
+| Reliability | • 99.9% uptime<br>• Automated backups                      |
+| Integration | • Intranet compatibility<br>• Standard API support         |
+| Maintenance | • Modular design<br>• System logging                       |
 
 ## Key Constraints
 
