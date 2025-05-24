@@ -65,61 +65,69 @@ The Vacation Tracking System (VTS) aims to empower employees by giving them dire
 
 ### 📊 Data Model
 
+> The data model illustrates the core entities and their relationships in the VTS system, including Employee, Request, and Leave Balance tables with their respective attributes and relationships.
+
 <details>
 <summary>📊 Data Model Diagram</summary>
 
 ![Data Model](Data%20Modal/Data-Modal.png)
 
-> The data model illustrates the core entities and their relationships in the VTS system, including Employee, Request, and Leave Balance tables with their respective attributes and relationships.
-
 </details>
 
 ### 🔄 Flow Charts
 
-<details>
-<summary>📝 New Request Flow</summary>
-
-![New Request Flow](Flow%20Charts/New-request-flow.png)
+#### 📝 New Request Flow
 
 > This flow demonstrates the complete lifecycle of a new vacation request, from submission through validation, approval process, and final status updates. It handles both manager-approval and auto-approval scenarios.
 
+<details>
+<summary>📝 View New Request Flow Diagram</summary>
+
+![New Request Flow](Flow%20Charts/New-request-flow.png)
+
 </details>
 
-<details>
-<summary>✏️ Request Edit Flow</summary>
-
-![Request Edit Flow](Flow%20Charts/Request-edit-flow.png)
+#### ✏️ Request Edit Flow
 
 > Shows how pending requests can be modified, including validation checks and the option to withdraw if changes cannot be made. Includes manager notification and balance adjustment processes.
 
+<details>
+<summary>✏️ View Request Edit Flow Diagram</summary>
+
+![Request Edit Flow](Flow%20Charts/Request-edit-flow.png)
+
 </details>
 
-<details>
-<summary>❌ Request Withdrawal Flow</summary>
-
-![Request Withdrawal Flow](Flow%20Charts/Request-withdrawal-flow.png)
+#### ❌ Request Withdrawal Flow
 
 > Illustrates the process of withdrawing a pending request, including confirmation steps, manager notification, and automatic leave balance restoration.
 
+<details>
+<summary>❌ View Request Withdrawal Flow Diagram</summary>
+
+![Request Withdrawal Flow](Flow%20Charts/Request-withdrawal-flow.png)
+
 </details>
 
-<details>
-<summary>🚫 Request Cancellation Flow</summary>
-
-![Request Cancellation Flow](Flow%20Charts/Request-cancellation-flow.png)
+#### 🚫 Request Cancellation Flow
 
 > Details the cancellation process for approved requests, with different paths based on timing (within/after 5 days), including explanation requirements and automatic balance adjustments.
+
+<details>
+<summary>🚫 View Request Cancellation Flow Diagram</summary>
+
+![Request Cancellation Flow](Flow%20Charts/Request-cancellation-flow.png)
 
 </details>
 
 ### 🔄 System Sequence
 
+> A comprehensive view of system interactions between Employee, Manager, VTS System, HR Database, and Email Service components, showing the temporal flow of operations and data.
+
 <details>
-<summary>🔄 Sequence Diagram</summary>
+<summary>🔄 View Sequence Diagram</summary>
 
 ![Sequence Diagram](Sequence%20Diagram/Sequence%20Diagram.png)
-
-> A comprehensive view of system interactions between Employee, Manager, VTS System, HR Database, and Email Service components, showing the temporal flow of operations and data.
 
 </details>
 
