@@ -1,4 +1,4 @@
-# 🏖️ Vacation-Tracking-System
+# Vacation-Tracking-System
 
 ## 📋 Overview
 
