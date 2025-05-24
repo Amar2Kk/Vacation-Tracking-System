@@ -60,3 +60,31 @@ The Vacation Tracking System (VTS) aims to empower employees by giving them dire
 | Security  | Audit logs, RBAC, data encryption                                             |
 | Time/Data | Supports long-term scheduling, retains historical records                     |
 | Usability | Simple UI, email notifications required                                       |
+
+## System Design
+
+### Data Model
+
+![Data Model](Data%20Modal/Data-Modal.png)
+
+### Flow Charts
+
+#### New Request Flow
+
+![New Request Flow](Flow%20Charts/New-request-flow.png)
+
+#### Request Edit Flow
+
+![Request Edit Flow](Flow%20Charts/Request-edit-flow.png)
+
+#### Request Withdrawal Flow
+
+![Request Withdrawal Flow](Flow%20Charts/Request-withdrawal-flow.png)
+
+#### Request Cancellation Flow
+
+![Request Cancellation Flow](Flow%20Charts/Request-cancellation-flow.png)
+
+### System Sequence
+
+![Sequence Diagram](Sequence%20Diagram/Sequence%20Diagram.png)
