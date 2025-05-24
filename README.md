@@ -75,28 +75,28 @@ The Vacation Tracking System (VTS) aims to empower employees by giving them dire
 ### Flow Charts
 
 <details>
-<summary>Click to view New Request Flow</summary>
+<summary>New Request Flow</summary>
 
 ![New Request Flow](Flow%20Charts/New-request-flow.png)
 
 </details>
 
 <details>
-<summary>Click to view Request Edit Flow</summary>
+<summary>Request Edit Flow</summary>
 
 ![Request Edit Flow](Flow%20Charts/Request-edit-flow.png)
 
 </details>
 
 <details>
-<summary>Click to view Request Withdrawal Flow</summary>
+<summary>Request Withdrawal Flow</summary>
 
 ![Request Withdrawal Flow](Flow%20Charts/Request-withdrawal-flow.png)
 
 </details>
 
 <details>
-<summary>Click to view Request Cancellation Flow</summary>
+<summary>Request Cancellation Flow</summary>
 
 ![Request Cancellation Flow](Flow%20Charts/Request-cancellation-flow.png)
 
