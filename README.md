@@ -70,6 +70,8 @@ The Vacation Tracking System (VTS) aims to empower employees by giving them dire
 
 ![Data Model](Data%20Modal/Data-Modal.png)
 
+> The data model illustrates the core entities and their relationships in the VTS system, including Employee, Request, and Leave Balance tables with their respective attributes and relationships.
+
 </details>
 
 ### 🔄 Flow Charts
@@ -79,12 +81,16 @@ The Vacation Tracking System (VTS) aims to empower employees by giving them dire
 
 ![New Request Flow](Flow%20Charts/New-request-flow.png)
 
+> This flow demonstrates the complete lifecycle of a new vacation request, from submission through validation, approval process, and final status updates. It handles both manager-approval and auto-approval scenarios.
+
 </details>
 
 <details>
 <summary>✏️ Request Edit Flow</summary>
 
 ![Request Edit Flow](Flow%20Charts/Request-edit-flow.png)
+
+> Shows how pending requests can be modified, including validation checks and the option to withdraw if changes cannot be made. Includes manager notification and balance adjustment processes.
 
 </details>
 
@@ -93,12 +99,16 @@ The Vacation Tracking System (VTS) aims to empower employees by giving them dire
 
 ![Request Withdrawal Flow](Flow%20Charts/Request-withdrawal-flow.png)
 
+> Illustrates the process of withdrawing a pending request, including confirmation steps, manager notification, and automatic leave balance restoration.
+
 </details>
 
 <details>
 <summary>🚫 Request Cancellation Flow</summary>
 
 ![Request Cancellation Flow](Flow%20Charts/Request-cancellation-flow.png)
+
+> Details the cancellation process for approved requests, with different paths based on timing (within/after 5 days), including explanation requirements and automatic balance adjustments.
 
 </details>
 
@@ -108,6 +118,8 @@ The Vacation Tracking System (VTS) aims to empower employees by giving them dire
 <summary>🔄 Sequence Diagram</summary>
 
 ![Sequence Diagram](Sequence%20Diagram/Sequence%20Diagram.png)
+
+> A comprehensive view of system interactions between Employee, Manager, VTS System, HR Database, and Email Service components, showing the temporal flow of operations and data.
 
 </details>
 
